@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex justify-between">
+        <nav>
+            <a href="/books/new">
+            <button class="btn-green mr-3">Add Book</button></a>
+        </nav>
+    </header>
+    <div class="xl:container flex jusfity-center items-center h-screen">
+        <form action="/users" method="POST" class="w-1/3 border-2 p-4 rounded">
+           //HTML method support only post and get method
+            <h2 class="text-center text-blue-400 mb-2">Add Book</h2>
+            <input type="text"  class="form-control"name="name" placeholder=" name">
+            <input type="text" class="form control" name="email" placeholder=" email">
+            <input type="number" class="form control" name="age" placeholder=" age">
+            <div class="text-center">
+                <button class="btn-blue mt-2" type="submit"></button>
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
