@@ -4,10 +4,12 @@ writeCode
 - check cookie in your browser
 - access cookies set on browser
 
-app.get('/', (req,res) => {
 
+app.use(cookieParser())
+
+app.use((req,res, next) => {
+  res.cookie('name', 'Altcampus')
+  next()
 })
 
-var setting = browser.cookies.set(
-  details               // object
-)
+
