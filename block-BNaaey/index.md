@@ -4,6 +4,8 @@ Implement login for the previously registered user which have been generated in 
 
 - handle a GET request on `/users/login` to render the login form which should accept
 
+router.get('/users/login', (req,res,next) => {})
+
   - email
   - password
 
